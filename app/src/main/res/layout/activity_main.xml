@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="32dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/abc_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter a number A"
+        android:inputType="numberSigned|numberDecimal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/abc_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter a number B"
+        android:inputType="numberSigned|numberDecimal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/abc_a"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/abc_a"
+        app:layout_constraintTop_toBottomOf="@+id/abc_a" />
+
+    <EditText
+        android:id="@+id/abc_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter a number C"
+        android:inputType="numberSigned|numberDecimal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/abc_b"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/abc_b"
+        app:layout_constraintTop_toBottomOf="@+id/abc_b" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hitung"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/abc_c"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/abc_c"
+        app:layout_constraintTop_toBottomOf="@+id/abc_c" />
+
+    <TextView
+        android:id="@+id/abcresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hasil"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/label_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:text="Number A"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/abc_a"
+        app:layout_constraintStart_toStartOf="@+id/abc_a" />
+
+    <TextView
+        android:id="@+id/label_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:text="Number B"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/abc_b"
+        app:layout_constraintStart_toStartOf="@+id/abc_b" />
+
+    <TextView
+        android:id="@+id/label_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:text="Number C"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/abc_c"
+        app:layout_constraintStart_toStartOf="@+id/abc_c" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
